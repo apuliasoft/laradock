@@ -5,7 +5,7 @@
 ### Paths #################################################
 
 # Point to the path of your applications code on your host
-APP_CODE_PATH_HOST=../
+APP_CODE_PATH_HOST=../valoresalute
 
 # Point to where the `APP_CODE_PATH_HOST` should be in the container
 APP_CODE_PATH_CONTAINER=/var/www
@@ -33,7 +33,7 @@ COMPOSE_FILE=docker-compose.yml
 COMPOSE_PATH_SEPARATOR=:
 
 # Define the prefix of container names. This is useful if you have multiple projects that use laradock to have separate containers per project.
-COMPOSE_PROJECT_NAME=laradock
+COMPOSE_PROJECT_NAME=comifar
 
 ### PHP Version ###########################################
 
@@ -123,7 +123,7 @@ WORKSPACE_INSTALL_MONGO=false
 WORKSPACE_INSTALL_AMQP=false
 WORKSPACE_INSTALL_CASSANDRA=false
 WORKSPACE_INSTALL_GEARMAN=false
-WORKSPACE_INSTALL_MSSQL=false
+WORKSPACE_INSTALL_MSSQL=true
 WORKSPACE_INSTALL_DRUSH=false
 WORKSPACE_DRUSH_VERSION=8.1.17
 WORKSPACE_INSTALL_DRUPAL_CONSOLE=false
@@ -198,7 +198,7 @@ PHP_FPM_INSTALL_MONGO=false
 PHP_FPM_INSTALL_AMQP=false
 PHP_FPM_INSTALL_CASSANDRA=false
 PHP_FPM_INSTALL_GEARMAN=false
-PHP_FPM_INSTALL_MSSQL=false
+PHP_FPM_INSTALL_MSSQL=true
 PHP_FPM_INSTALL_SSH2=false
 PHP_FPM_INSTALL_SOAP=false
 PHP_FPM_INSTALL_XSL=false
@@ -329,7 +329,7 @@ PERCONA_ENTRYPOINT_INITDB=./percona/docker-entrypoint-initdb.d
 ### MSSQL #################################################
 
 MSSQL_DATABASE=master
-MSSQL_PASSWORD="yourStrong(!)Password"
+MSSQL_PASSWORD=SecretPassword100
 MSSQL_PORT=1433
 
 ### MARIADB ###############################################
@@ -393,7 +393,7 @@ MINIO_PORT=9000
 ### ADMINER ###############################################
 
 ADM_PORT=8080
-ADM_INSTALL_MSSQL=false
+ADM_INSTALL_MSSQL=true
 
 ### PHP MY ADMIN ##########################################
 
