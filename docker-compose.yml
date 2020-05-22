@@ -465,8 +465,8 @@ services:
       - MSSQL_DATABASE=${MSSQL_DATABASE}
       - MSSQL_SA_PASSWORD=${MSSQL_PASSWORD}
       - ACCEPT_EULA=Y
-    # volumes:
-    #   - mssql:/var/opt/mssql
+    volumes:
+      - mssql:/var/opt/mssql
     ports:
       - "${MSSQL_PORT}:1433"
     networks:
